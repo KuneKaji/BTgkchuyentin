@@ -7,15 +7,12 @@ int main(){
 		int tmp;cin>>tmp;
 		a.push_back(tmp);
 	}
+
 	for (int i=0;i<n;i++){
+		int tong=0;
 		for (int j=i;j<n;j++){
-			int tong=0;
-			for (int l=i;l<=j;l++){
-				tong+=a[l];
-			}
-			if (tong==k){
-			 	cout<<"co ton tai";return 0;
-			}
+			tong+=a[j];
+			if (tong==k){cout<<"co ton tai";return 0;}
 		}
 	}
 }
