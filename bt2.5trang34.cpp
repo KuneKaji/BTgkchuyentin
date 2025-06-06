@@ -15,5 +15,6 @@ int xuli(int n){
 }
 int main(){
 	int n;cin>>n;
-	cout<<xuli(n);
+	if (xuli(n)==9) cout<<"YES";
+	else cout<<"NO";
 }
